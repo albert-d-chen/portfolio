@@ -2102,6 +2102,7 @@ input, select, textarea {
 			border-radius: 3px;
 			display: block;
 			height: 450px;
+			width: 100%;
 		}
 
 		.image.left {
@@ -4156,8 +4157,8 @@ input, select, textarea {
 				}
 
 				.carousel article {
-					width: 18em;
-					margin: 0 1.25em 0 0;
+					width: 50em;
+					margin: 0 5em 0 0;
 				}
 
 	}

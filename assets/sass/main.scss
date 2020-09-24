@@ -1931,3 +1931,142 @@
 			}
 		}
 	}
+
+	.carousel {
+		position: relative;
+		overflow: hidden;
+		padding: 2em 0 2em 0;
+		margin-bottom: 0;
+
+		.forward, .backward {
+			position: absolute;
+			top: 50%;
+			width: 6em;
+			height: 12em;
+			margin-top: -6em;
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				display: block;
+				width: 6em;
+				height: 6em;
+				border-radius: 100%;
+				background-color: rgba(72, 57, 73, 0.5);
+				position: absolute;
+				top: 50%;
+				margin-top: -3em;
+				-moz-transition: background-color 0.35s ease-in-out;
+				-webkit-transition: background-color 0.35s ease-in-out;
+				-o-transition: background-color 0.35s ease-in-out;
+				-ms-transition: background-color 0.35s ease-in-out;
+				transition: background-color 0.35s ease-in-out;
+				-webkit-backface-visibility: hidden;
+			}
+
+			&:after {
+				content: '';
+				width: 3em;
+				height: 3em;
+				position: absolute;
+				top: 50%;
+				margin: -1.5em 0 0 0;
+				background: url('images/arrow.svg') no-repeat center center;
+			}
+
+			&:hover {
+				&:before {
+					background-color: rgba(239, 131, 118, 0.75);
+				}
+			}
+		}
+
+		.forward {
+			right: 0;
+
+			&:before {
+				right: -3em;
+			}
+
+			&:after {
+				right: -0.25em;
+			}
+		}
+
+		.backward {
+			left: 0;
+
+			&:before {
+				left: -3em;
+			}
+
+			&:after {
+				left: -0.25em;
+				@include vendor('transform', 'scaleX(-1)');
+			}
+		}
+
+		.reel {
+			white-space: nowrap;
+			position: relative;
+			-webkit-overflow-scrolling: touch;
+			padding: 0 2em 0 2em;
+		}
+
+		article {
+			display: inline-block;
+			width: 18em;
+			background: #fff;
+			text-align: center;
+			padding: 0 1em 3em 1em;
+			margin: 0 2em 0 0;
+			white-space: normal;
+			opacity: 1.0;
+			@include vendor('transition', 'opacity 0.75s ease-in-out');
+
+			&.loading {
+				opacity: 0;
+			}
+
+			.image {
+				position: relative;
+				left: -1em;
+				top: 0;
+				width: auto;
+				margin-right: -2em;
+				margin-bottom: 3em;
+			}
+
+			p {
+				text-align: center;
+			}
+		}
+	}
+
+/* Wide */
+
+	@include breakpoint('<=wide') {
+
+		/* Basic */
+
+			body, input, textarea, select {
+				font-size: 14pt;
+				line-height: 1.75em;
+			}
+
+		/* Carousel */
+
+			.carousel {
+				padding: 1.5em 0 1.5em 0;
+
+				.reel {
+					padding: 0 1.5em 0 1.5em;
+				}
+
+				article {
+					width: 18em;
+					margin: 0 1.25em 0 0;
+				}
+			}
+
+	}
