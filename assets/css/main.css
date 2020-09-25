@@ -4255,3 +4255,10 @@ cursor: none;
 .nodec2 {
 border-bottom: none;
 }
+
+.headphoto{
+	display: flex;
+	position: relative;
+	border-radius: 50%;
+	left: 45px;
+}
