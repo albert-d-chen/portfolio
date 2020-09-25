@@ -3156,6 +3156,7 @@ input, select, textarea {
 		.wrapper.style5 {
 			background-color: white;
 			color: #4E4852;
+			margin-top: 170px;
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
@@ -3904,6 +3905,76 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
+	#main2 > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/photoy.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/photoy.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/photoy.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/photoy.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main2 > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main2 > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#main2 > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main2 > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main2 > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main2 > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main2 > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main2 > header {
+		background-attachment: scroll;
+	}
+
 /* Footer */
 
 	#footer {
@@ -4168,3 +4239,11 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 4em 0;
 		}
+
+.image.featured img{
+		border-radius: 3px;
+			display: block;
+			height: 450px;
+			width: 100%;
+			border: 3px solid rgb(139, 136, 136);
+}
