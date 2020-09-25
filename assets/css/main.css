@@ -4247,3 +4247,11 @@ input, select, textarea {
 			width: 100%;
 			border: 3px solid rgb(139, 136, 136);
 }
+
+.nodec {
+border-bottom: none;
+cursor: none;
+}
+.nodec2 {
+border-bottom: none;
+}
